@@ -2,11 +2,11 @@ var combat = require('combat');
 var worker = require('worker');
 
 module.exports = {
-    builder : worker.builder,
+    builder   : worker.builder,
     harvester : worker.harvester,
-    miner : worker.miner,
+    miner     : worker.miner,
+    hauler    : worker.hauler,
     scavenger : worker.scavenger,
-    hauler : worker.hauler,
-    guard : combat.guard,
-    healer : combat.healer,
+    healer    : combat.healer,
+    guard     : combat.guard,
 };
