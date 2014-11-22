@@ -4,8 +4,8 @@ module.exports = {
     builder   : builder,
     harvester : harvester,
     miner     : miner,
+    scavenger : scavenger,
     hauler    : hauler,
-    carrier   : carrier,
 };
 
 function builder(creep) {
@@ -42,7 +42,7 @@ function miner(creep) {
 	}
 }
 
-function hauler(creep){
+function scavenger(creep){
 	var spawn = creep.pos.findNearest(Game.MY_SPAWNS);
     if(creep.energy < creep.energyCapacity) {
 		var source = creep.pos.findNearest(Game.DROPPED_ENERGY);
@@ -59,7 +59,7 @@ function hauler(creep){
     }
 }
 
-function carrier(creep){
+function hauler(creep){
 	var spawn = creep.pos.findNearest(Game.MY_SPAWNS);
 	var miner = creep.pos.findNearest(Game.MY_CREEPS, filter.role("miner"));
 	//log(creep.energy,creep.energyCapacity,miner, spawn);

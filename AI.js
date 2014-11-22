@@ -5,8 +5,8 @@ module.exports = {
     builder : worker.builder,
     harvester : worker.harvester,
     miner : worker.miner,
+    scavenger : worker.scavenger,
     hauler : worker.hauler,
-    carrier : worker.carrier,
     guard : combat.guard,
     healer : combat.healer,
 };
